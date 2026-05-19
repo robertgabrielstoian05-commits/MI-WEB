@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style>.lw { font-size: 60px; font-family: Arial, Helvetica, sans-serif; }</style>
+            </head>
+            <body>
+                
+
+
+    <meta charset="UTF-8">
+    <title>Mi Página Web - Robert Stoian</title>
+    <style>
+        /* ESTILO GENERAL (Tus colores originales) */
+        body {
+            background-color: #031a1e;
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .seccion {
+            width: 98%; /* Un poco más ancho para que quepan las 3 en fila */
+            max-width: 1300px;
+            margin: 20px auto;
+            padding-bottom: 50px;
+        }
+
+        .cabecera {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        }
+
+        h1 {
+            margin-top: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2.titulo-seccion {
+            margin-top: 50px;
+            color: #7ab5a7;
+            border-top: 1px solid #0a2e36;
+            padding-top: 30px;
+            text-transform: uppercase;
+        }
+
+        .enlace-web {
+            color: #7ab5a7;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 2px solid #7ab5a7;
+            padding: 12px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 35px;
+            transition: all 0.3s ease;
+        }
+
+        .enlace-web:hover {
+            background-color: #7ab5a7;
+            color: #031a1e;
+            transform: scale(1.05);
+        }
+
+        /* TRES COLUMNAS JUNTAS */
+        .contenedor-columnas {
+            display: flex;
+            gap: 15px; /* Espacio entre columnas */
+            margin-top: 10px;
+            justify-content: space-between;
+        }
+
+        .columna {
+            background-color: #0a2e36;
+            width: 32%; /* Fuerza a que quepan 3 en la fila */
+            padding: 15px;
+            border-radius: 12px;
+            border-bottom: 4px solid #7ab5a7;
+            box-sizing: border-box;
+        }
+
+        .columna h2 {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Ajuste de IFRAMES para que no sean gigantes */
+        iframe {
+            width: 100%;
+            height: 300px; /* Altura controlada para que no ocupe toda la pantalla */
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Especial para Microbit: MakeCode necesita un poco de margen para el simulador */
+        .microbit-iframe {
+            height: 320px; 
+        }
+
+        .desc {
+            color: #a0ccc2;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+    </style>
+
+
+
+    <div class="seccion">
+        <img src="https://i.postimg.cc/c1KBZSnm/ROBERT-STOIAN.png" alt="Banner Robert Stoian" class="cabecera">
+
+        <h1>PROGRAMACIÓN 2ºBACH</h1>
+        
+        <h2 class="titulo-seccion">PROYECTOS SCRATCH</h2>
+        <a href="https://scratch.mit.edu/users/rgstoian02/" class="enlace-web" target="_blank">🚀 Visita mi página de Scratch</a>
+
+        <div class="contenedor-columnas">
+            <div class="columna">
+                <h2>LABERINTO</h2>
+                <iframe src="https://scratch.mit.edu/projects/1268189559/embed" allowtransparency="true" allowfullscreen=""></iframe>
+                <p class="desc">Bandera verde para empezar.</p>
+            </div>
+
+            <div class="columna">
+                <h2>TIBURÓN ZAMPÓN</h2>
+                <iframe src="https://scratch.mit.edu/projects/1272880134/embed" allowtransparency="true" allowfullscreen=""></iframe>
+                <p class="desc">Usa las flechas del teclado.</p>
+            </div>
+
+            <div class="columna">
+                <h2>PALETA VELOZ</h2>
+                <iframe src="https://scratch.mit.edu/projects/1277264768/embed" allowtransparency="true" allowfullscreen=""></iframe>
+                <p class="desc">Proyecto avanzado.</p>
+            </div>
+        </div>
+
+        <h2 class="titulo-seccion">PRÁCTICAS MICRO:BIT</h2>
+        <div class="contenedor-columnas">
+            <div class="columna">
+                <h2>PRESENTACIÓN</h2>
+                <iframe class="microbit-iframe" src="https://makecode.microbit.org/---codeembed#pub:S22599-36187-06193-49670" allowfullscreen="" sandbox="allow-scripts allow-same-origin"></iframe>
+                <p class="desc">Pulsa botones A o B.</p>
+            </div>
+
+            <div class="columna">
+                <h2>DADO DIGITAL</h2>
+                <iframe class="microbit-iframe" src="https://makecode.microbit.org/---codeembed#pub:S37916-52468-03191-63824" allowfullscreen="" sandbox="allow-scripts allow-same-origin"></iframe>
+                <p class="desc">Pulsa SHAKE para lanzar.</p>
+            </div>
+
+            <div class="columna">
+                <h2>TERMÓMETRO</h2>
+                <iframe class="microbit-iframe" src="https://makecode.microbit.org/---codeembed#pub:S42671-39486-19300-29465" allowfullscreen="" sandbox="allow-scripts allow-same-origin"></iframe>
+                <p class="desc">Temperatura en tiempo real.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
